@@ -57,11 +57,12 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-  randNum = [1,69,32,20]
-  lastItem = array.length -1;
-  if ((array.length) - 1 > 0 ){
-    return (array.length);
+randNum = [1,69,32,20,7];
+function getLast( ) {
+  console.log('in the function')
+  lastItem = randNum.slice(-1);
+  if (randNum.length - 1 > 0 ){
+    return randNum
   }
   else {
     return 'undefined'
@@ -73,7 +74,11 @@ console.log(getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  let check = false;
+  //todo forloop
+if (value === [i]) {
+     check = true; }
+     return check
 }
 
 // ----------------------
